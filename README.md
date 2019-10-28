@@ -39,9 +39,9 @@ React is component-based, and each component should be separated into its own fi
 - handleEvent(params) {
 -  // do something useful
 - }
-* * HOWEVER: Any event handlers you define in JSX elements should use arrow notation (and the concise body syntax, where applicable):
+* HOWEVER: Any event handlers you define in JSX elements should use arrow notation (and the concise body syntax, where applicable):
 
-- onEvent={(params) => this.handleEvent(params)}
+- -  onEvent={(params) => this.handleEvent(params)}
 
 * Add a button beneath that input. When clicked, the button should invoke a method defined on the class to toggle a "hasLoaded" state property, which has a default value of false.
 

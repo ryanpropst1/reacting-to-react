@@ -47,7 +47,7 @@ export default class App extends Component {
           <h1>
             {this.props.value} <br></br> {this.state.text}
           </h1>
-          <h2>{"Loaded State is True"}</h2>
+          <h2>{"Loaded State is True - Component is mounted"}</h2>
           <input
             type="text"
             placeholder="Enter Name Here"
@@ -61,6 +61,7 @@ export default class App extends Component {
       return (
         <Fragment>
           <h1>Loading...</h1><br></br>
+          <h2>{"Loaded State is false - Component is unmounted"}</h2>
           <button onClick={this.handleToggle}>Load</button>
         </Fragment>
       );
